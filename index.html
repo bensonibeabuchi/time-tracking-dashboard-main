@@ -6,149 +6,112 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Time tracking dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="/dist/output.css" rel="stylesheet">
 
 </head>
-<body>
-  <main>
-    <section class="profile card-style">
-      <div class="profile_header">
-        <img src="./images/image-jeremy.png" alt="Image of Jeremy Jerome">
-        <p>Report for</p>
-        <h1>Jeremy Robson</h1>
-      </div>
-      <div class="profile_body">
-        <ul>
-          <li>
-            <button>Daily</button>
-          </li>
-          <li>
-            <button>Weekly</button>
-          </li>
-          <li>
-            <button>Monthly</button>
-          </li>
-        </ul>
-      </div> 
-    </section>
 
-    <section class="work card-style">
-      <div class="work_inner">
-        <div class="work_header">
+<body class="flex justify-center items-center md:h-screen bg-[hsl(226,43%,10%)]">
+  
+  <main class=" w-3/5 grid md:grid-cols-4 grid-cols-1 md:grid-rows-[250px_250px] grid-rows-[repeat(7,150px)] gap-4">
+     
+    <div class="bg-[hsl(235,46%,20%)] md:row-span-2 rounded-2xl overflow-hidden">
+      <div class="bg-[hsl(246,80%,60%)] h-4/6 rounded-2xl md:pt-8 md:pl-8 flex flex-row items-center justify-evenly">
+        <img class="md:w-20 w-14 md:border-4 border-2 rounded-full" src="./images/image-jeremy.png" alt="profile photo of Jeremy Robson">
+        <div>
+          <p class="text-[hsl(236,100%,87%)] font-light md:mt-8 mt-2 text-xs">Report For</p>
+          <h1 class="text-white md:text-5xl text-2xl font-light"> Jeremy Robson </h1>
+        </div>
+        
+      </div>
+      <div class="md:pt-8 pt-2 md:pl-8 pt-2 text-[hsl(235,45%,61%)]">
+        <ul class="list-none md:text-lg text-s flex flex-row md:flex-col justify-evenly mt-2">
+          <li class="pb-3 hover:text-white cursor-pointer w-16">Daily</li>
+          <li class="pb-3 hover:text-white cursor-pointer w-16">Weekly</li>
+          <li class="pb-3 hover:text-white cursor-pointer w-16">Monthly</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-[hsl(15,100%,70%)] rounded-2xl bg-no-repeat bg-right-top" style="background-image: url(./images/icon-work.svg);">
+      <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(246,80%,60%)] md:h-4/5 md:mt-[50px] mt-[30px] h-[120px] rounded-2xl cursor-pointer overflow-hidden">
+        <div class="flex flex-row justify-between items-center text-white px-8 pt-4">
           <p>Work</p>
           <img src="./images/icon-ellipsis.svg" alt="3 dots">
         </div>
-        <div class="work_body">
-          <h2>32hrs</h2>
-          <p>Last Week - 36hrs</p>
+        <div class="text-white pt-1 md:pt-8 pl-8  flex flex-row md:flex-col md: justify-between md:items-start items-center">
+          <h1 class="text-white md:text-6xl text-3xl font-light ">32hrs</h1>
+          <p class="text-[hsl(236,100%,87%)] text-xs md:text-sm md:pt-4 pr-8">Last Week - 36hrs</p>
         </div>
-      </div> 
-      
-    </section>
-    <section class="play card-style">
-      <div class="work_inner">
-        <div class="work_header">
+      </div>
+    </div>
+
+    <div class="bg-[hsl(195,74%,62%)] rounded-2xl bg-no-repeat bg-right-top" style="background-image: url(./images/icon-play.svg);">
+      <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(246,80%,60%)] md:h-4/5 md:mt-[50px] mt-[30px] h-[120px] rounded-2xl cursor-pointer overflow-hidden">
+        <div class="flex flex-row justify-between items-center text-white px-8 pt-4">
           <p>Play</p>
           <img src="./images/icon-ellipsis.svg" alt="3 dots">
         </div>
-        <div class="work_body">
-          <h2>23hrs</h2>
-          <p>Last Week - 29hrs</p>
+        <div class="text-white pt-1 md:pt-8 pl-8  flex flex-row md:flex-col md: justify-between md:items-start items-center">
+          <h1 class="text-white md:text-6xl text-3xl font-light">10hrs</h1>
+          <p class="text-[hsl(236,100%,87%)] text-xs md:text-sm md:pt-4 pr-8">Last Week - 8hrs</p>
         </div>
-      </div> 
-      <!-- Play -->
-      <!-- 1hr daily -->
-      <!-- Previous - 2hrs daily -->
-      <!-- 10hrs weekly -->
-      <!-- Previous - 8hrs weekly -->
-      <!-- 23hrs monthly -->
-      <!-- Previous - 29hrs monthly -->
-    </section>
+      </div>
+    </div>
 
-    <section class="study card-style">
-      <div class="work_inner">
-        <div class="work_header">
+    <div class="bg-[hsl(348,100%,68%)] rounded-2xl bg-no-repeat bg-right-top" style="background-image: url(./images/icon-study.svg);">
+      <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(246,80%,60%)] md:h-4/5 md:mt-[50px] mt-[30px] h-[120px] rounded-2xl cursor-pointer overflow-hidden">
+        <div class="flex flex-row justify-between items-center text-white px-8 pt-4">
           <p>Study</p>
           <img src="./images/icon-ellipsis.svg" alt="3 dots">
         </div>
-        <div class="work_body">
-          <h2>4hrs</h2>
-          <p>Last Week - 13hrs</p>
+        <div class="text-white pt-1 md:pt-8 pl-8  flex flex-row md:flex-col md: justify-between md:items-start items-center">
+          <h1 class="text-white md:text-6xl text-3xl font-light ">4hrs</h1>
+          <p class="text-[hsl(236,100%,87%)] text-xs md:text-sm md:pt-4 pr-8">Last Week - 7hrs</p>
         </div>
-      </div> 
-      <!-- Study -->
-      <!-- 0hrs daily -->
-      <!-- Previous - 1hr daily -->
-      <!-- 4hrs weekly -->
-      <!-- Previous - 7hrs weekly -->
-      <!-- 13hrs monthly -->
-      <!-- Previous - 19hrs monthly -->
-    </section>
+      </div>
+    </div>
 
-    <section class="exercise card-style">
-      <div class="work_inner">
-        <div class="work_header">
+    <div class="bg-[hsl(145,58%,55%)] rounded-2xl bg-no-repeat bg-right-top" style="background-image: url(./images/icon-exercise.svg);">
+      <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(246,80%,60%)] md:h-4/5 md:mt-[50px] mt-[30px] h-[120px] rounded-2xl cursor-pointer overflow-hidden">
+        <div class="flex flex-row justify-between items-center text-white px-8 pt-4">
           <p>Exercise</p>
           <img src="./images/icon-ellipsis.svg" alt="3 dots">
         </div>
-        <div class="work_body">
-          <h2>4hrs</h2>
-          <p>Last Week - 11hrs</p>
+        <div class="text-white pt-1 md:pt-8 pl-8  flex flex-row md:flex-col md: justify-between md:items-start items-center">
+          <h1 class="text-white md:text-6xl text-3xl font-light ">4hrs</h1>
+          <p class="text-[hsl(236,100%,87%)] text-xs md:text-sm md:pt-4 pr-8">Last Week - 5hrs</p>
         </div>
-      </div> 
-      <!-- Exercise -->
-      <!-- 1hr daily -->
-      <!-- Previous - 1hr daily -->
-      <!-- 4hrs weekly -->
-      <!-- Previous - 5hrs weekly -->
-      <!-- 11hrs monthly -->
-      <!-- Previous - 18hrs monthly -->
-    </section>
+      </div>
+    </div>
 
-    <section class="social card-style">
-      <div class="work_inner">
-        <div class="work_header">
+    <div class="bg-[hsl(264,64%,52%)] rounded-2xl bg-no-repeat bg-right-top" style="background-image: url(./images/icon-social.svg);">
+      <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(246,80%,60%)] md:h-4/5 md:mt-[50px] mt-[30px] h-[120px] rounded-2xl cursor-pointer overflow-hidden">
+        <div class="flex flex-row justify-between items-center text-white px-8 pt-4">
           <p>Social</p>
           <img src="./images/icon-ellipsis.svg" alt="3 dots">
         </div>
-        <div class="work_body">
-          <h2>5hrs</h2>
-          <p>Last Week - 10hrs</p>
+        <div class="text-white pt-1 md:pt-8 pl-8  flex flex-row md:flex-col md: justify-between md:items-start items-center">
+          <h1 class="text-white md:text-6xl text-3xl font-light ">5hrs</h1>
+          <p class="text-[hsl(236,100%,87%)] text-xs md:text-sm md:pt-4 pr-8">Last Week - 10hrs</p>
         </div>
-      </div> 
-      <!-- Social -->
-      <!-- 1hr daily -->
-      <!-- Previous - 3hrs daily -->
-      <!-- 5hrs weekly -->
-      <!-- Previous - 10hrs weekly -->
-      <!-- 21hrs monthly -->
-      <!-- Previous - 23hrs monthly -->
-    </section>
+      </div>
+    </div>
 
-    <section class="selfcare card-style">
-      <div class="work_inner">
-        <div class="work_header">
+    <div class="bg-[hsl(43,84%,65%)] rounded-2xl bg-no-repeat bg-right-top" style="background-image: url(./images/icon-self-care.svg);">
+      <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(246,80%,60%)] md:h-4/5 md:mt-[50px] mt-[30px] h-[120px] rounded-2xl cursor-pointer overflow-hidden">
+        <div class="flex flex-row justify-between items-center text-white px-8 pt-4">
           <p>Self Care</p>
           <img src="./images/icon-ellipsis.svg" alt="3 dots">
         </div>
-        <div class="work_body">
-          <h2>2hrs</h2>
-          <p>Last Week - 2hrs</p>
+        <div class="text-white pt-1 md:pt-8 pl-8  flex flex-row md:flex-col md: justify-between md:items-start items-center">
+          <h1 class="text-white md:text-6xl text-3xl font-light ">2hrs</h1>
+          <p class="text-[hsl(236,100%,87%)] text-xs md:text-sm md:pt-4 pr-8">Last Week - 2hrs</p>
         </div>
-      </div> 
-      <!-- Self Care -->
-      <!-- 0hrs daily -->
-      <!-- Previous - 1hr daily -->
-      <!-- 2hrs weekly -->
-      <!-- Previous - 2hrs weekly -->
-      <!-- 7hrs monthly -->
-      <!-- Previous - 11hrs monthly -->
-    </section>
+      </div>
+    </div>
+
+
+
   </main>
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Benson Ibeabuchi</a>.
-  </div> -->
 </body>
 </html>
