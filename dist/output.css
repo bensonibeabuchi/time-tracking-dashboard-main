@@ -2196,6 +2196,18 @@ video {
   padding-top: 0.5rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2887,8 +2899,24 @@ video {
     align-items: flex-start;
   }
 
+  .md\:justify-normal {
+    justify-content: normal;
+  }
+
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+
+  .md\:justify-items-start {
+    justify-items: start;
   }
 
   .md\:gap-4 {
@@ -2919,6 +2947,10 @@ video {
 
   .md\:align-baseline {
     vertical-align: baseline;
+  }
+
+  .md\:align-top {
+    vertical-align: top;
   }
 
   .md\:text-6xl {
